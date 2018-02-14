@@ -13,7 +13,7 @@
     {% for contact in contacts %}
        <li>{{ contact.name }}</li> 
        <form method="POST" action="/delete">
-       <input type="hidden" name="contact_to_delete" value="{{ contact.name }}">
+       <input type="hidden" name="id_to_delete" value="{{ contact.id }}">
        <input type="submit" value="Delete"/>
        </form>
     {% endfor %}
